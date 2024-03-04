@@ -50,22 +50,22 @@ public class RubberArrayNewTest {
     public void testContains() {
         rubberArrayNew.add(-1);
         rubberArrayNew.add(3);
-        Assertions.assertEquals(true, rubberArrayNew.contains(-1));
-        Assertions.assertEquals(false, rubberArrayNew.contains(3));
+        Assertions.assertTrue (rubberArrayNew.contains(-1));
+        Assertions.assertFalse(rubberArrayNew.contains(5));
     }
 
     @Test
     public void testIndexOf() {
     rubberArrayNew.add(-1);
     rubberArrayNew.add(3);
-    Assertions.assertEquals(1, rubberArrayNew.contains(3));
-    Assertions.assertEquals(-1, rubberArrayNew.contains(5));
+    Assertions.assertEquals(1, rubberArrayNew.indexOf(3));
+    Assertions.assertEquals(-1, rubberArrayNew.indexOf(5));
     }
 
     @Test
     public void testToString() {
         rubberArrayNew.add(-1);
         rubberArrayNew.add(3);
-        Assertions.assertEquals("[-1, 3]", rubberArrayNew.toString() );
+        Assertions.assertEquals("[-1,3]", rubberArrayNew.toString() );
     }
 }
