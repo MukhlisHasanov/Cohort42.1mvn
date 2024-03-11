@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * AIT-TR, cohort 42.1, Java Basic, hw #10 ext
  *
- * @author Sergey Iryupin
+ * @author Mukhlis Hasanov
  * @version 8,23,26,28-Feb-24
  */
 public class Interpreter {
